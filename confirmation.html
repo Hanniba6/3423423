@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - RTO Education Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>RTO Education Center</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="cart.html" class="auth-required">Cart</a></li>
+                <li><a href="orders.html" class="auth-required">Order Management</a></li>
+                <li id="auth-links" style="display: none;">
+                    <a href="#" id="login-btn">Login</a>
+                    <a href="#" id="register-btn">Register</a>
+                </li>
+                <li id="user-info">
+                    <span id="username-display"></span>
+                    <a href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="confirmation-section">
+            <h2>Order Confirmation</h2>
+            
+            <div id="order-details">
+                <h3>Order Details</h3>
+                <div id="order-items">
+                    <!-- Order items will be loaded dynamically via JavaScript -->
+                </div>
+                
+                <div class="order-total">
+                    <h3>Total: <span id="order-total-amount">$0.00</span></h3>
+                </div>
+            </div>
+            
+            <div class="shipping-info">
+                <h3>Organization Information</h3>
+                <form id="shipping-form">
+                    <div class="form-group">
+                        <label for="full-name">Organization Name</label>
+                        <input type="text" id="full-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-person">Contact Person</label>
+                        <input type="text" id="contact-person" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" id="postal-code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="payment-info">
+                <h3>Payment Method</h3>
+                <form id="payment-form">
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="payment-method" value="credit-card" checked>
+                            Credit Card
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="payment-method" value="bank-transfer">
+                            Bank Transfer
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="payment-method" value="paypal">
+                            PayPal
+                        </label>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="delivery-options">
+                <h3>Delivery Options</h3>
+                <form id="delivery-form">
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="delivery-method" value="download" checked>
+                            Digital Download (Instant)
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="delivery-method" value="physical">
+                            Physical Materials (3-5 business days)
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>
+                            <input type="radio" name="delivery-method" value="both">
+                            Both (Additional fee: $15.00)
+                        </label>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="confirmation-actions">
+                <button id="edit-order" class="btn btn-secondary">Edit Order</button>
+                <button id="confirm-order" class="btn btn-success">Confirm Order</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>RTO Education Center is a leading vocational education and training provider in Australia, focused on delivering high-quality VET courses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Address: 92-100 Donnison Street, Gosford, NSW 2250</p>
+                <p>Phone: 8454887569</p>
+                <p>Email: 12397878@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RTO Education Center - Australian Registered Training Organisation</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/confirmation.js"></script>
+</body>
+</html> 

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTO Education Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>RTO Education Center</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="cart.html" class="auth-required">Cart</a></li>
+                <li><a href="orders.html" class="auth-required">Order Management</a></li>
+                <li id="auth-links">
+                    <a href="#" id="login-btn">Login</a>
+                    <a href="#" id="register-btn">Register</a>
+                </li>
+                <li id="user-info" style="display: none;">
+                    <span id="username-display"></span>
+                    <a href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Welcome to Ace Training RTO Education Center</h1>
+                <p>Providing nationally recognized vocational education and training courses Address ​92-100 Donnison Street, Gosford, NSW 2250 </p>
+                <div class="hero-buttons">
+                    <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="auth-forms" class="auth-section" style="display: none;">
+            <div class="auth-form" id="login-form">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="login-username">Email Address</label>
+                        <input type="email" id="login-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" id="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="auth-form" id="register-form" style="display: none;">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="register-fullname">Full Name</label>
+                        <input type="text" id="register-fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-username">Email Address</label>
+                        <input type="email" id="register-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-phone">Phone Number</label>
+                        <input type="tel" id="register-phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-address">Address</label>
+                        <input type="text" id="register-address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" required minlength="12">
+                        <small class="password-requirements">
+                            Password must be at least 12 characters and include uppercase, lowercase, numbers, and special characters.
+                        </small>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirm Password</label>
+                        <input type="password" id="register-confirm-password" required minlength="12">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="courses" class="courses-section">
+            <div class="section-header">
+                <h2>Featured Courses</h2>
+                <p>Discover our comprehensive range of IT training programs</p>
+            </div>
+            <div class="courses-container" id="featured-courses">
+                <!-- Featured courses will be loaded dynamically via JavaScript -->
+            </div>
+            <div class="section-action">
+                <a href="courses.html" class="btn btn-primary">View All Courses</a>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+                <p>Experience excellence in vocational education and training</p>
+            </div>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/resources/resource1.jpg" alt="Expert Instruction" style="width:64px; height:64px;">
+                    </div>
+                    <h3>Industry Expert Instruction</h3>
+                    <p>Learn from experienced professionals with extensive industry knowledge</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/resources/resource2.jpg" alt="Practical Projects" style="width:64px; height:64px;">
+                    </div>
+                    <h3>Practical Projects</h3>
+                    <p>Gain hands-on experience through real-world projects and case studies</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/resources/resource3.jpg" alt="Certification" style="width:64px; height:64px;">
+                    </div>
+                    <h3>Recognized Certification</h3>
+                    <p>Earn nationally recognized qualifications that are valued by employers</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="img/resources/resource4.jpg" alt="Learning Support" style="width:64px; height:64px;">
+                    </div>
+                    <h3>Comprehensive Learning Support</h3>
+                    <p>Access to learning materials, technical support, and career guidance</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <div class="section-header">
+                <h2>Educational Resources</h2>
+                <p>Australian Quality Training Organizations</p>
+            </div>
+            <div class="resources-container">
+                <div class="resource-card">
+                    <div class="resource-image">
+                        <img src="img/resources/resource1.jpg" alt="Australia Institute of Business & Technology" onerror="this.src='img/placeholder.jpg'">
+                    </div>
+                    <div class="resource-info">
+                        <h3>1. Australia Institute of Business & Technology (RTO 45169)</h3>
+                        <p class="resource-price">$299.00</p>
+                        <p class="resource-description">Provides training in business, information technology and management fields.</p>
+                        <div class="resource-actions">
+                            <a href="resources.html" class="btn btn-secondary">View Details</a>
+                            <button class="btn btn-primary add-to-cart" data-id="resource1" data-name="Australia Institute of Business & Technology" data-price="299.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-image">
+                        <img src="img/resources/resource2.jpg" alt="Training Online Australia Pty Ltd" onerror="this.src='img/placeholder.jpg'">
+                    </div>
+                    <div class="resource-info">
+                        <h3>2. Training Online Australia Pty Ltd (RTO 41206)</h3>
+                        <p class="resource-price">$249.00</p>
+                        <p class="resource-description">Provides training in information technology, business and management fields.</p>
+                        <div class="resource-actions">
+                            <a href="resources.html" class="btn btn-secondary">View Details</a>
+                            <button class="btn btn-primary add-to-cart" data-id="resource2" data-name="Training Online Australia Pty Ltd" data-price="249.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-image">
+                        <img src="img/resources/resource3.jpg" alt="Australian National Institute of Business & Technology" onerror="this.src='img/placeholder.jpg'">
+                    </div>
+                    <div class="resource-info">
+                        <h3>3. Australian National Institute of Business & Technology Pty Ltd (RTO 21368)</h3>
+                        <p class="resource-price">$329.00</p>
+                        <p class="resource-description">Provides training in information technology, business and management fields.</p>
+                        <div class="resource-actions">
+                            <a href="resources.html" class="btn btn-secondary">View Details</a>
+                            <button class="btn btn-primary add-to-cart" data-id="resource3" data-name="Australian National Institute of Business & Technology" data-price="329.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="resource-card">
+                    <div class="resource-image">
+                        <img src="img/resources/resource4.jpg" alt="Online Courses Australia" onerror="this.src='img/placeholder.jpg'">
+                    </div>
+                    <div class="resource-info">
+                        <h3>4. Online Courses Australia Pty Ltd (RTO 32080)</h3>
+                        <p class="resource-price">$279.00</p>
+                        <p class="resource-description">Provides training in information technology, business and management fields.</p>
+                        <div class="resource-actions">
+                            <a href="resources.html" class="btn btn-secondary">View Details</a>
+                            <button class="btn btn-primary add-to-cart" data-id="resource4" data-name="Online Courses Australia" data-price="279.00">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-action">
+                <a href="resources.html" class="btn btn-primary">View All Resources</a>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready to Start Your IT Career?</h2>
+                <p>Join our community of learners and take the first step towards your future</p>
+                <a href="courses.html" class="btn btn-primary">Get Started Today</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>RTO Education Center is a leading vocational education and training provider in Australia, focused on delivering high-quality VET courses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Address: 92-100 Donnison Street, Gosford, NSW 2250</p>
+                <p>Phone: 8454887569</p>
+                <p>Email: 12397878@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RTO Education Center - Australian Registered Training Organization</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html> 

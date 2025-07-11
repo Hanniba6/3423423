@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - RTO Education Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>RTO Education Center</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="cart.html" class="auth-required active">Cart</a></li>
+                <li><a href="orders.html" class="auth-required">Order Management</a></li>
+                <li id="auth-links" style="display: none;">
+                    <a href="#" id="login-btn">Login</a>
+                    <a href="#" id="register-btn">Register</a>
+                </li>
+                <li id="user-info">
+                    <span id="username-display"></span>
+                    <a href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="cart-section">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be dynamically loaded through JavaScript -->
+            </div>
+            
+            <div class="cart-summary">
+                <div class="cart-total">
+                    <h3>Total: <span id="cart-total-amount">$0.00</span></h3>
+                </div>
+                <div class="cart-actions">
+                    <button id="export-cart" class="btn btn-success">Export to CSV</button>
+                    <button id="view-export-history" class="btn btn-info">View Export History</button>
+                    <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+                    <button id="checkout" class="btn btn-primary">Checkout</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="export-history-section" style="display: none;">
+            <h2>Export History</h2>
+            <div id="export-history-list">
+                <!-- Export history will be dynamically loaded through JavaScript -->
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <h2>Order Price Calculator</h2>
+            <div class="calculator">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="calc-price">Unit Price ($)</label>
+                        <input type="number" id="calc-price" min="0" step="0.01">
+                    </div>
+                    <div class="form-group">
+                        <label for="calc-quantity">Quantity</label>
+                        <input type="number" id="calc-quantity" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="calc-discount">Discount (%)</label>
+                        <input type="number" id="calc-discount" min="0" max="100" value="0">
+                    </div>
+                    <button id="calculate" class="btn">Calculate</button>
+                </div>
+                <div class="calculator-result">
+                    <p>Original Price: <span id="original-price">$0.00</span></p>
+                    <p>Discount: <span id="discount-amount">$0.00</span></p>
+                    <p>Final Price: <span id="final-price">$0.00</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <h2>Continue Shopping</h2>
+            <div class="resource-links">
+                <a href="courses.html" class="btn">View All Courses</a>
+            </div>
+            <div class="recommended-courses">
+                <h3>Recommended Courses</h3>
+                <div class="courses-container" id="recommended-courses">
+                    <!-- Recommended courses will be dynamically loaded through JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>RTO Education Center is a leading IT training provider in Australia, focused on delivering high-quality IT courses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Address: 92-100 Donnison Street, Gosford, NSW 2250</p>
+                <p>Phone: 8454887569</p>
+                <p>Email: 12397878@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RTO Education Center - Australian Registered Training Organization</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/export.js"></script>
+</body>
+</html> 

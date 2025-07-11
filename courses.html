@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VET Qualifications - RTO Education Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>RTO Education Center</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="orders.html">Order Management</a></li>
+                <li id="auth-links">
+                    <a href="#" id="login-btn">Login</a>
+                    <a href="#" id="register-btn">Register</a>
+                </li>
+                <li id="user-info" style="display: none;">
+                    <span id="username-display"></span>
+                    <a href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Australian VET Qualifications</h1>
+                <p>Explore our nationally recognized vocational education and training courses to start your career path</p>
+            </div>
+        </section>
+
+        <section class="courses-section full-width">
+            <div class="container">
+                <div class="courses-container" id="courses-list">
+                    <!-- Courses will be loaded dynamically via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <section class="course-features">
+            <div class="container">
+                <h2>Our Course Features</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <img src="img/icons/industry.svg" alt="Industry Experts" onerror="this.src='img/courses/ict50115.jpg'; this.style.width='40px'; this.style.height='40px'; this.style.objectFit='cover';">
+                            </div>
+                            <h3>Industry Expert Instruction</h3>
+                            <p>All courses are designed and taught by industry professionals, ensuring content keeps pace with industry trends.</p>
+                        </div>
+                        <div class="feature-image-container">
+                            <img src="img/courses/ict50220.jpg" alt="Industry Expert Training" class="feature-full-image">
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <img src="img/icons/hands-on.svg" alt="Practical Projects" onerror="this.src='img/courses/ict40120.jpg'; this.style.width='40px'; this.style.height='40px'; this.style.objectFit='cover';">
+                            </div>
+                            <h3>Rich Practical Projects</h3>
+                            <p>Each course includes multiple practical projects to help students transform theoretical knowledge into practical skills.</p>
+                        </div>
+                        <div class="feature-image-container">
+                            <img src="img/courses/ict30115.jpg" alt="Hands-on Training" class="feature-full-image">
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <img src="img/icons/certificate.svg" alt="Certification" onerror="this.src='img/courses/22603vic.jpg'; this.style.width='40px'; this.style.height='40px'; this.style.objectFit='cover';">
+                            </div>
+                            <h3>Recognized Certification</h3>
+                            <p>Receive an Australian-recognized training certificate upon course completion, enhancing your employment competitiveness.</p>
+                        </div>
+                        <div class="feature-image-container">
+                            <img src="img/courses/ict60220.jpg" alt="Professional Certification" class="feature-full-image">
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-content">
+                            <div class="feature-icon">
+                                <img src="img/icons/support.svg" alt="Learning Support" onerror="this.src='img/courses/ict20120.jpg'; this.style.width='40px'; this.style.height='40px'; this.style.objectFit='cover';">
+                            </div>
+                            <h3>Comprehensive Learning Support</h3>
+                            <p>Offering one-on-one tutoring, group discussions, and learning resources to ensure effective learning outcomes.</p>
+                        </div>
+                        <div class="feature-image-container">
+                            <img src="img/courses/ict30120.jpg" alt="Student Support Services" class="feature-full-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+            .features-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .feature {
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                overflow: hidden;
+            }
+            
+            .feature-content {
+                padding: 20px;
+                text-align: center;
+            }
+            
+            .feature-icon {
+                margin-bottom: 15px;
+            }
+            
+            .feature-icon img {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .feature-image-container {
+                width: 100%;
+                height: 250px;
+                overflow: hidden;
+            }
+            
+            .feature-full-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            
+            @media (min-width: 768px) {
+                .features-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            
+            @media (min-width: 1024px) {
+                .feature {
+                    flex-direction: row;
+                    align-items: center;
+                }
+                
+                .feature-content {
+                    flex: 1;
+                    padding: 30px;
+                    text-align: left;
+                }
+                
+                .feature-image-container {
+                    flex: 1;
+                    height: 300px;
+                }
+            }
+        </style>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>RTO Education Center is a leading vocational education and training provider in Australia, focused on delivering high-quality VET courses.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Address: 92-100 Donnison Street, Gosford, NSW 2250</p>
+                <p>Phone: 8454887569</p>
+                <p>Email: 12397878@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RTO Education Center - Australian Registered Training Organisation</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Backup script to ensure all 8 courses are displayed -->
+    <script>
+        // Ensure execution after the page has fully loaded
+        window.addEventListener('load', function() {
+            console.log("Backup script activated - Ensuring all 8 courses are displayed");
+            
+            // Check if current page is courses page
+            if (window.location.pathname.includes('courses.html')) {
+                console.log("Courses page detected, starting forced loading of all courses...");
+                
+                // Fetch course data directly from courses.json
+                fetch('data/courses.json')
+                    .then(response => response.json())
+                    .then(courses => {
+                        console.log(`Retrieved ${courses.length} courses, preparing to display...`);
+                        
+                        // Find courses container
+                        const coursesContainer = document.getElementById('courses-list');
+                        if (!coursesContainer) {
+                            console.error("Cannot find courses container, unable to display courses");
+                            return;
+                        }
+                        
+                        // Check current number of displayed courses
+                        const currentCourseCards = coursesContainer.querySelectorAll('.course-card');
+                        console.log(`Currently ${currentCourseCards.length} course cards on page`);
+                        
+                        // If all 8 courses are already displayed, no need to reload
+                        if (currentCourseCards.length >= 8) {
+                            console.log("All 8 courses are already displayed, no need to reload");
+                            return;
+                        }
+                        
+                        // Clear container
+                        coursesContainer.innerHTML = '';
+                        
+                        // Display all courses
+                        courses.forEach(course => {
+                            const courseCard = document.createElement('div');
+                            courseCard.className = 'course-card';
+                            courseCard.id = `course-${course.id}`;
+                            
+                            courseCard.innerHTML = `
+                                <div class="course-image">
+                                    <img src="${course.image}" alt="${course.name}" onerror="this.src='img/placeholder.jpg'">
+                                </div>
+                                <div class="course-info">
+                                    <h3>${course.name}</h3>
+                                    <p class="course-duration">${course.duration}</p>
+                                    <p class="course-price">$${course.price.toFixed(2)}</p>
+                                    <p class="course-description">${course.description}</p>
+                                    <div class="course-actions">
+                                        <button class="btn view-details" data-id="${course.id}">View Details</button>
+                                        <button class="btn add-to-cart" data-id="${course.id}">Add to Cart</button>
+                                    </div>
+                                </div>
+                                <div class="course-details" id="details-${course.id}" style="display: none;">
+                                    <div class="details-section">
+                                        <h4>Course Content</h4>
+                                        <p>${course.courseware || 'No detailed information available'}</p>
+                                    </div>
+                                    <div class="details-section">
+                                        <h4>Assessment Requirements</h4>
+                                        <p>${course.assessment || 'No detailed information available'}</p>
+                                    </div>
+                                    <div class="details-section">
+                                        <h4>Sample Projects</h4>
+                                        <ul>
+                                            ${course.sampleProjects ? course.sampleProjects.map(project => `<li>${project}</li>`).join('') : '<li>No sample projects available</li>'}
+                                        </ul>
+                                    </div>
+                                </div>
+                            `;
+                            
+                            coursesContainer.appendChild(courseCard);
+                        });
+                        
+                        console.log(`All ${courses.length} courses have been displayed`);
+                        
+                        // Re-add button events
+                        const coursesList = document.getElementById('courses-list');
+                        if (coursesList) {
+                            coursesList.addEventListener('click', function(e) {
+                                // View details button
+                                if (e.target.classList.contains('view-details')) {
+                                    const courseId = e.target.getAttribute('data-id');
+                                    const detailsElement = document.getElementById(`details-${courseId}`);
+                                    if (detailsElement) {
+                                        const isVisible = detailsElement.style.display !== 'none';
+                                        detailsElement.style.display = isVisible ? 'none' : 'block';
+                                    }
+                                }
+                                
+                                // Add to cart button
+                                if (e.target.classList.contains('add-to-cart')) {
+                                    const courseId = e.target.getAttribute('data-id');
+                                    // Check if logged in
+                                    if (!localStorage.getItem('currentUser')) {
+                                        alert('Please login first to add courses to your cart!');
+                                        return;
+                                    }
+                                    
+                                    const course = courses.find(c => c.id === courseId);
+                                    if (!course) return;
+                                    
+                                    // Add to cart
+                                    const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+                                    const cartItemIndex = cart.findIndex(item => item.courseId === courseId);
+                                    
+                                    if (cartItemIndex > -1) {
+                                        cart[cartItemIndex].quantity += 1;
+                                    } else {
+                                        cart.push({
+                                            courseId,
+                                            quantity: 1,
+                                            dateAdded: new Date().toISOString()
+                                        });
+                                    }
+                                    
+                                    localStorage.setItem('cart', JSON.stringify(cart));
+                                    alert(`${course.name} has been added to your cart!`);
+                                }
+                            });
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Unable to load course data:', error);
+                    });
+            }
+        });
+    </script>
+</body>
+</html> 

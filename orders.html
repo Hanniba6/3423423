@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management - RTO Education Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>RTO Education Center</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="cart.html" class="auth-required">Cart</a></li>
+                <li><a href="orders.html" class="auth-required active">Order Management</a></li>
+                <li id="auth-links" style="display: none;">
+                    <a href="#" id="login-btn">Login</a>
+                    <a href="#" id="register-btn">Register</a>
+                </li>
+                <li id="user-info">
+                    <span id="username-display"></span>
+                    <a href="logout.html">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Order Management</h1>
+                <p>View and manage your order history</p>
+            </div>
+        </section>
+
+        <section class="orders-section">
+            <div class="container">
+                <div class="user-welcome">
+                    <h2>Welcome, <span id="user-fullname">User</span></h2>
+                </div>
+                
+                <div class="order-management-container">
+                    <div class="order-history">
+                        <h2>Order History</h2>
+                        <div id="order-list">
+                            <!-- Orders will be loaded dynamically via JavaScript -->
+                            <p class="no-orders">You don't have any orders yet</p>
+                        </div>
+                    </div>
+                    
+                    <div class="order-management-tools">
+                        <div class="management-card">
+                            <h3>Download Order History</h3>
+                            <p>Download your order history as a JSON file to your device.</p>
+                            <button id="download-orders" class="btn btn-info">Download Orders JSON</button>
+                        </div>
+                        
+                        <div class="management-card">
+                            <h3>Account Management</h3>
+                            <p>Manage your account data and session.</p>
+                            <div class="account-actions">
+                                <button id="clear-data" class="btn btn-danger">Clear Cart & Order History</button>
+                                <button id="logout-btn" class="btn btn-warning">Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>RTO Education Center is a leading IT training provider in Australia, focused on delivering high-quality IT courses and educational resources.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>Address: 92-100 Donnison Street, Gosford, NSW 2250</p>
+                <p>Phone: 8454887569</p>
+                <p>Email: 12397878@qq.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 RTO Education Center - Australian Registered Training Organization</p>
+        </div>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/orders-management.js"></script>
+</body>
+</html> 

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "course-001",
+    "name": "Certificate II in Applied Digital Technologies (ICT20120)",
+    "description": "This qualification provides the skills and knowledge for individuals to be competent in a wide range of basic digital technologies in various contexts.",
+    "duration": "6-12 months",
+    "price": 1299.99,
+    "courseware": "Includes foundational digital literacy, basic hardware support, introductory software applications, and workplace communication skills",
+    "assessment": "Assessment includes practical demonstrations, knowledge tests, and workplace simulations",
+    "sampleProjects": ["Basic Desktop Publishing", "Computer Assembly and Maintenance", "Office Software Applications"],
+    "image": "img/courses/ict20120.jpg"
+  },
+  {
+    "id": "course-002",
+    "name": "Certificate III in Information Technology (ICT30120)",
+    "description": "This qualification provides entry-level skills and knowledge for individuals to be competent in a range of Information Technology technical functions.",
+    "duration": "12-18 months",
+    "price": 1999.99,
+    "courseware": "Includes technical support, networking fundamentals, operating systems, and hardware installation and maintenance",
+    "assessment": "Assessment includes theoretical knowledge tests, practical demonstrations, and workplace projects",
+    "sampleProjects": ["Network Setup and Configuration", "PC Troubleshooting", "Basic Web Design"],
+    "image": "img/courses/ict30120.jpg"
+  },
+  {
+    "id": "course-003",
+    "name": "Certificate IV in Information Technology (ICT40120)",
+    "description": "This qualification provides the skills and knowledge for an individual to be competent in a wide range of general ICT technologies and to work within specialized areas.",
+    "duration": "12-24 months",
+    "price": 2499.99,
+    "courseware": "Includes advanced technical support, network administration, programming fundamentals, and database management",
+    "assessment": "Assessment includes project work, knowledge tests, practical demonstrations, and workplace evidence",
+    "sampleProjects": ["Network Administration", "Database Development", "Application Support"],
+    "image": "img/courses/ict40120.jpg"
+  },
+  {
+    "id": "course-004",
+    "name": "Diploma of Information Technology (ICT50220)",
+    "description": "This qualification provides the skills and knowledge for an individual to administer and manage information and communications technology (ICT) infrastructure, systems, and networks in medium to large organizations.",
+    "duration": "18-24 months",
+    "price": 3299.99,
+    "courseware": "Includes systems analysis and design, project management, programming, and network design and administration",
+    "assessment": "Assessment includes substantial project work, case studies, practical demonstrations, and workplace evidence",
+    "sampleProjects": ["IT Project Management", "Systems Design and Implementation", "Advanced Network Configuration"],
+    "image": "img/courses/ict50220.jpg"
+  },
+  {
+    "id": "course-005",
+    "name": "Advanced Diploma of Information Technology (ICT60220)",
+    "description": "This qualification provides high-level information and communications technology (ICT) skills and knowledge for an individual to be competent in advanced technical and theoretical concepts in ICT.",
+    "duration": "24-36 months",
+    "price": 3999.99,
+    "courseware": "Includes IT strategy and governance, enterprise systems, cybersecurity management, and advanced programming techniques",
+    "assessment": "Assessment includes research projects, case studies, strategic planning exercises, and workplace evidence",
+    "sampleProjects": ["IT Strategy Development", "Enterprise System Implementation", "Cybersecurity Architecture"],
+    "image": "img/courses/ict60220.jpg"
+  },
+  {
+    "id": "course-006",
+    "name": "Certificate IV in Cyber Security (22603VIC)",
+    "description": "This qualification provides the cybersecurity skills and knowledge for an individual to work as a cybersecurity technician who supports information security in an organization.",
+    "duration": "12-18 months",
+    "price": 2799.99,
+    "courseware": "Includes network security, penetration testing, ethical hacking, and security compliance",
+    "assessment": "Assessment includes security labs, penetration testing exercises, vulnerability assessments, and security documentation",
+    "sampleProjects": ["Security Auditing", "Penetration Testing", "Incident Response Planning"],
+    "image": "img/courses/22603vic.jpg"
+  },
+  {
+    "id": "course-007",
+    "name": "Certificate III in Information Technology (ICT30115)",
+    "description": "This qualification provides the foundation skills and knowledge for individuals to support information technology activities in the workplace across a wide range of ICT areas.",
+    "duration": "12-18 months",
+    "price": 1899.99,
+    "courseware": "Includes hardware support, basic networking, user support, and workplace communication",
+    "assessment": "Assessment includes practical tasks, knowledge tests, and workplace projects",
+    "sampleProjects": ["Hardware Support and Maintenance", "User Support Documentation", "Basic Network Setup"],
+    "image": "img/courses/ict30115.jpg"
+  },
+  {
+    "id": "course-008",
+    "name": "Diploma of Information Technology (ICT50115)",
+    "description": "This qualification provides the skills and knowledge for an individual to administer and manage information and communications technology infrastructure in small-to-medium enterprises.",
+    "duration": "18-24 months",
+    "price": 3199.99,
+    "courseware": "Includes systems administration, networking, IT project management, and business analysis",
+    "assessment": "Assessment includes complex projects, case studies, and workplace evidence",
+    "sampleProjects": ["IT Infrastructure Planning", "Systems Administration", "Business IT Solutions"],
+    "image": "img/courses/ict50115.jpg"
+  }
+] 

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "resource1",
+    "name": "Australia Institute of Business & Technology",
+    "code": "RTO 45169",
+    "description": "Provides training in business, information technology and management fields.",
+    "price": 299.00,
+    "content": "Access to comprehensive learning materials, online courses, and professional development resources from Australia Institute of Business & Technology.",
+    "website": "https://training.gov.au/Organisation/Details/45169",
+    "features": [
+      "Industry-recognized certification",
+      "24/7 access to online learning platform",
+      "Expert instructor support",
+      "Interactive learning materials"
+    ],
+    "image": "img/resources/resource1.jpg"
+  },
+  {
+    "id": "resource2",
+    "name": "Training Online Australia Pty Ltd",
+    "code": "RTO 41206",
+    "description": "Provides training in information technology, business and management fields.",
+    "price": 249.00,
+    "content": "Complete online training package with digital textbooks, practice exams, and video tutorials from Training Online Australia.",
+    "website": "https://training.gov.au/Organisation/Details/41206",
+    "features": [
+      "Self-paced learning modules",
+      "Mobile-friendly platform",
+      "Progress tracking and reporting",
+      "Industry case studies"
+    ],
+    "image": "img/resources/resource2.jpg"
+  },
+  {
+    "id": "resource3",
+    "name": "Australian National Institute of Business & Technology",
+    "code": "RTO 21368",
+    "description": "Provides training in information technology, business and management fields.",
+    "price": 329.00,
+    "content": "Premium educational resources including specialized textbooks, simulation software, and practical assessment tools.",
+    "website": "https://training.gov.au/Organisation/Details/21368",
+    "features": [
+      "Real-world project templates",
+      "Industry mentor support",
+      "Lifetime access to materials",
+      "Regular content updates"
+    ],
+    "image": "img/resources/resource3.jpg"
+  },
+  {
+    "id": "resource4",
+    "name": "Online Courses Australia",
+    "code": "RTO 32080",
+    "description": "Provides training in information technology, business and management fields.",
+    "price": 279.00,
+    "content": "Comprehensive digital learning package with interactive modules, assessment tools, and professional development resources.",
+    "website": "https://training.gov.au/Organisation/Details/32080",
+    "features": [
+      "Interactive learning exercises",
+      "Virtual lab environments",
+      "Industry-aligned content",
+      "Certificate of completion"
+    ],
+    "image": "img/resources/resource4.jpg"
+  },
+  {
+    "id": "resource5",
+    "name": "Skilled Services Australia",
+    "code": "RTO 32473",
+    "description": "Provides training in information technology, business and management fields.",
+    "price": 199.00,
+    "content": "Essential training resources including digital textbooks, practice assessments, and skill development tools.",
+    "website": "https://training.gov.au/Organisation/Details/32473",
+    "features": [
+      "Practical skills focus",
+      "Downloadable templates",
+      "Mobile learning app",
+      "Career pathway guidance"
+    ],
+    "image": "img/resources/resource5.jpg"
+  },
+  {
+    "id": "resource6",
+    "name": "Partners in Training Australia",
+    "code": "RTO 21837",
+    "description": "Provides training in information technology, business and management fields.",
+    "price": 259.00,
+    "content": "Professional development package with industry-specific learning materials, case studies, and assessment tools.",
+    "website": "https://training.gov.au/Organisation/Details/21837",
+    "features": [
+      "Workplace application guides",
+      "Industry expert interviews",
+      "Peer learning community",
+      "Professional portfolio tools"
+    ],
+    "image": "img/resources/resource6.jpg"
+  },
+  {
+    "id": "resource7",
+    "name": "National Training Centre of Australia",
+    "code": "RTO 6527",
+    "description": "Provides training in information technology, business and management fields.",
+    "price": 289.00,
+    "content": "Advanced learning package with specialized textbooks, software access, and professional certification preparation materials.",
+    "website": "https://training.gov.au/Organisation/Details/6527",
+    "features": [
+      "Certification exam preparation",
+      "Industry software access",
+      "Professional development plan",
+      "Career advancement resources"
+    ],
+    "image": "img/resources/resource7.jpg"
+  },
+  {
+    "id": "resource8",
+    "name": "Central Australian Institute of Technology",
+    "code": "RTO 22302",
+    "description": "Provides training in information technology, business and management fields.",
+    "price": 319.00,
+    "content": "Premium educational package with comprehensive learning materials, simulation tools, and industry-specific resources.",
+    "website": "https://training.gov.au/Organisation/Details/22302",
+    "features": [
+      "Advanced simulation tools",
+      "Industry mentorship program",
+      "Project-based learning resources",
+      "Professional networking opportunities"
+    ],
+    "image": "img/resources/resource8.jpg"
+  },
+  {
+    "id": "resource9",
+    "name": "Digital Technology Solutions Academy",
+    "code": "RTO 45872",
+    "description": "Provides training in information technology, cybersecurity and digital innovation fields.",
+    "price": 269.00,
+    "content": "Specialized IT education package with cutting-edge technical training materials, practical coding exercises, and cybersecurity resources.",
+    "website": "https://training.gov.au/Organisation/Details/45872",
+    "features": [
+      "Hands-on technical labs",
+      "Industry certification pathways",
+      "IT project management tools",
+      "Tech innovation workshops"
+    ],
+    "image": "img/resources/resource2.jpg"
+  },
+  {
+    "id": "resource10",
+    "name": "Advanced Computing Institute of Australia",
+    "code": "RTO 41095",
+    "description": "Provides training in information technology, software development and cloud computing fields.",
+    "price": 309.00,
+    "content": "Premium IT education bundle with advanced programming materials, cloud architecture resources, and enterprise software development guides.",
+    "website": "https://training.gov.au/Organisation/Details/41095",
+    "features": [
+      "Cloud platform tutorials",
+      "Software architecture templates",
+      "DevOps practice environments",
+      "Enterprise system design tools"
+    ],
+    "image": "img/resources/resource5.jpg"
+  }
+] 

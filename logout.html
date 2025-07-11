@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout - RTO Education Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logout-message">
+            <h2>Logout Successful</h2>
+            <p>You have been successfully logged out.</p>
+            <div class="logout-actions">
+                <a href="index.html" class="btn btn-primary">Return to Home</a>
+                <a href="index.html?login=true" class="btn btn-secondary">Login Again</a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Information</h3>
+            <p>Address: 92-100 Donnison Street, Gosford, NSW 2250</p>
+            <p>Phone: 8454887569</p>
+            <p>Email: 12397878@qq.com</p>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Ensure the user is logged out
+            localStorage.removeItem('currentUser');
+            sessionStorage.removeItem('isLoggedIn');
+        });
+    </script>
+</body>
+</html> 
